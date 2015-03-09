@@ -1,0 +1,22 @@
+body{
+	text-align: center;
+	background-color: #303030;
+	font-family: 'Libre Baskerville', serif;
+}
+
+ul{
+	list-style-type: none;
+}
+
+h2{
+	font-family: 'Libre Baskerville', serif;
+	color: white;
+}
+
+table tr td {
+  font-size: 1rem;
+}
+
+a{
+	font-family: 'Libre Baskerville', serif;
+}

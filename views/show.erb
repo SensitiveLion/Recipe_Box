@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= recipe[0]["name"] %></title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='/http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body>
+    <h2><%= recipe[0]["name"] %></h2>
+    <div class="row">
+      <div class="small-9 columns">
+        <table>
+          <tr>
+            <h3>Description</h3>
+          </tr>
+          <tr>
+            <%= recipe[0]["description"] %>
+          </tr>
+          <tr>
+            <h3> Instructions </h3>
+          </tr>
+          <tr>
+            <p><%= recipe_details[0]["instructions"].gsub(/(\r)?\n/, "<br>") %></p>
+          </tr>
+        </table>
+      </div>
+      <div class="small-3 columns">
+        <table class="table">
+         <th>Ingredient list</th>
+          <% ingredients.each do |ingedient_hash| %>
+            <tr>
+              <%= ingedient_hash["name"] %></a>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
